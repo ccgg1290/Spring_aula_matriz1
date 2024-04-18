@@ -1,0 +1,12 @@
+spring.application.name=ms-user
+server.port=8081
+
+spring.datasource.url=jdbc:mysql://localhost:3306/user-db
+spring.datasource.username=root
+spring.datasource.password=AulaMatriz123
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+#creacion automatica
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect

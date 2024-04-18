@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ms-user
+  datasource:
+    url: jdbc:mysql://localhost:3307/user-db
+    username: root
+    password: AulaMatriz123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+springdoc:
+  api-docs:
+    path: /aulamatriz-doc
+  show-actuator: true
+  packages-to-scan: com.ms.user.controller.v2
+control:
+  exception:
+    business: Business exception
+    system: System exception
